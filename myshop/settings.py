@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop',
     'cart',
     'orders',
+    'payment',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #key to store the cart in the user session
 CART_SESSION_ID = 'cart'
+
+
+
+# Stripe settings
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MIEqFI3oqg7LxN0WTonMV12E5eTW7Wcpc36iwanVjEjAvsAQb3vqOIftnGkzpGK42diIfRjtxFeLR8XgbEuV8Dh00QSi66Jul' # Publishable key
+STRIPE_SECRET_KEY = 'sk_test_51MIEqFI3oqg7LxN01OkJUOOu3dkgCDPmbwiYl6Y46k7xkoLst3novVUj2so1mOl5LbjqM8xslQ1ZpGYLY7vWSawA00IHT9vvom'      # Secret key
+STRIPE_API_VERSION = '2022-08-01'
