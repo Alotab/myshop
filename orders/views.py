@@ -25,8 +25,8 @@ def order_create(request):
                           {'order': order})
     else:
         form = OrderCreateForm()
-    return redirect(reverse('payment:process'))
-        
-        # render(request,
-        #           'orders/order/create.html',
-        #           {'cart': cart, 'form': form})
+    return render(request,
+                  'orders/order/create.html',
+                  {'cart': cart, 'form': form})
+
+        # redirect(reverse('payment:process'))
